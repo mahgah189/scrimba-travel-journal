@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    background-color: #F55A5A;
+    padding: 1em;
+}
+
+header h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+}
+
+.travel-entry {
+    display: flex;
+    gap: 1em;
+    margin: 2em;
+    max-width: 510px;
+    min-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.travel-img {
+    border-radius: 0.5em;
+    max-width: 186px;
+    min-height: 40%;
+    max-height: 250px;
+    margin-right: 0.75em;
+}
+
+.travel-title {
+    margin-top: 0.3em;
+    font-size: 1.8rem;
+}
+
+.travel-desc {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 2em;
+}
+
+.fa-location-dot {
+    color: #F55A5A;
+}
+
+.location span {
+    margin-left: 0.4em;
+    margin-right: 1em;
+    letter-spacing: 0.10em;
+}
+
+.location a {
+    color: #918E9B;
+}
+
+.location a:hover {
+    color: #bcbac2;
+}
+
+.travel-title,
+.travel-dates {
+    font-weight: 600;
+}
+
+.travel-title,
+.travel-dates,
+.travel-desc,
+.location span {
+    cursor: text;
+}
+
+.location i,
+.location span,
+.location a,
+.travel-dates {
+    font-size: 0.9rem;
+}
+
+.location span,
+.location a {
+    font-weight: 300;
+}
+
+@media (max-width: 535px) {
+    
+    header {
+        gap: 0.6em;
+        padding: 1.2em;
+    }
+    
+    header img {
+        height: 1.75em;
+    }
+    
+    header h1 {
+        font-size: 1.2rem;
+    }
+    
+    .travel-entry {
+        margin-left: 1em;
+        margin-right: 1em;
+        min-width: 380px;
+    }
+    
+    .travel-img {
+        max-width: 150px;
+        max-height: 200px;
+    }
+    
+    .travel-title {
+        font-size: 2rem;
+    }
+    
+    .location a {
+        margin: 0.75em 0;
+        display: block;
+    }
+    
+    .location i,
+    .location span,
+    .location a,
+    .travel-dates {
+        font-size: 1rem;
+    }
+    
+}
